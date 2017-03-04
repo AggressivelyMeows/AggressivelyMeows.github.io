@@ -1110,7 +1110,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: whitesmoke;
 }
 input,
 button,
@@ -3251,6 +3251,9 @@ fieldset[disabled] .btn-success.focus {
   color: #5cb85c;
   background-color: #fff;
 }
+.btn-smooth {
+ class="smoothScroll"
+}
 .btn-info {
   color: #fff;
   background-color: #5bc0de;
@@ -4991,8 +4994,8 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background: url(http://wallpapersonthe.net/wallpapers/l/nebula_stars_space_tylercreatesworlds_space_art-25933.jpg);
-
+  background: url(http://img3.wikia.nocookie.net/__cb21/mspaintadventures/images/5/50/Wiki-background);
+  background-size: 200%;
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
