@@ -1,253 +1,219 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AradiaBot!</title>
-<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="javascript/smoothscroll.js"></script> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aradiabot - Cerulean</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/responsive-slider.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">	
+  </head>
+  <body>
+    <header>
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<div class="navbar-brand">
+								<a href="index.html"><h1>AradiaBot</h1></a>
+							</div>
+						</div>
+						<div class="menu">
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="index.html">Home</a></li>
+								<li role="presentation"><a href="commands.html">Commands</a></li>
+								<li role="presentation"><a href="https://discordapp.com/oauth2/authorize?client_id=211994441106325504&scope=bot&permissions=335593520">Invite Link</a></li>	
+                                <li role="presentation"><a href="https://p.datadoghq.com/sb/ea873c093-59bbe09658">Is 85 up?</a></li>		
+							</ul>
+						</div>
+					</div>			
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+    <div class="slider">		
+		<div id="about-slider">
+			<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators visible-xs">
+					<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-slider" data-slide-to="1"></li>
+					<li data-target="#carousel-slider" data-slide-to="2"></li>
+				</ol>
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<nav class="navbar navbar-default navbar-inverse">
-  <div class="container-fluid"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#">AradiaBot</a> </div>
+				<div class="carousel-inner">
+					<div class="item active">						
+						<img src="img/slide1.png" class="img-responsive" style="max-height:10%; align-self:center;" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">								
+								<h2><span>AradiaBot</span></h2>
+							</div>
+							<div class="col-md-10 col-md-offset-1">
+								<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.2s">								
+									<p>Fast.</p>
+								</div>
+							</div>
+						</div>
+				    </div>
+			
+				    <div class="item">
+						<img src="http://i.imgur.com/ihWzZmn.png" class="img-responsive" alt=""> 
+						<div class="carousel-caption">
+							<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">								
+								<h2>AradiaBot</h2>
+							</div>
+							<div class="col-md-10 col-md-offset-1">
+								<div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">								
+									<p>Reliable.</p>
+								</div>
+							</div>
+						</div>
+				    </div> 
+				</div>
+				
+				<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="fa fa-angle-left"></i> 
+				</a>
+				
+				<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
+					<i class="fa fa-angle-right"></i> 
+				</a>
+			</div> <!--/#carousel-slider-->
+		</div><!--/#about-slider-->
+	</div><!--/#slider-->
     
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#Commands" class="smoothscroll">Commands <span class="sr-only">(current)</span></a> </li>
-        <li><a href="#Add" class="smoothscroll">Add to my server!</a> </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="jumbotron-animate">
-       <p class="text-center" style="color: #F3EFEF; font-size: 1.5em">Hello, Welcome to 85's homepage.</p>
-       <img src="http://vignette2.wikia.nocookie.net/mspaintadventures/images/f/f0/Aradiaportrait.gif/revision/latest?cb=20110307214347" class="img-responsive"> </div>
-    </div>
-  </div>
-</div>
-<div class="container" id="Add">
-  <div class="row">
-    <div class="text-center col-sm-6">
-      <h3>Discord link</h3>
-      <p>Adding her to your server is as easy as 1. 2. 3.</p>
-      <a class="btn btn-info btn-lg" href="https://discordapp.com/oauth2/authorize?client_id=211994441106325504&scope=bot" role="button">Add her to your discord now!</a></div>
-    <div class="text-center col-sm-6">
-      <h3>Commands</h3>
-      <p>Wanna see what she can do? Check out her moves here!</p>
-      <a class="btn btn-info btn-lg smoothscroll" href="#Commands" role="button">Documentation</a></div>
-    <div class="text-center col-sm-6">
-      <h3>Discord server</h3>
-      <p>Have any questions? Ask them here!</p>
-      <a class="btn btn-danger btn-lg" href="#" role="button">Discord server link</a></div>
-  </div>
-</div>
-<hr>
+	
+	
+		<div class="content">
+			<h2><span>AradiaBot is the last bot you will ever need.*</span></h2>
+			<p>AradiaBot, formally known as "85", has grown up. Over the last few months, I have been hard at work making an producing this awesome new bot.
+            
+            Since the start of dev work 4 months ago. I've been hard at work learning and understanding though code and python. AradiaBot will be improved on. If you have any ideas, please send a PM to Cerulean#7014</p>
+		</div>
+	<div class="breadcrumb">
+		<h4>All New Commands!</h4>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="boxs" id="commandsSimple">				
+				<div class="col-md-4">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.3s">
+						<div class="align-center">
+							<h4>Movie Search</h4>					
+							<div class="icon">
+								<img style="height:150px;" src="http://i.imgur.com/DZuh0xN.gif" />
+							</div>
+							<p>
+							 Search movies to get information from IMDB, You can even pick a random movie!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.6s">
+						<div class="align-center">
+							<h4>Time Keeping</h4>				
+							<div class="icon">
+                                <img style="height:150px;" src="http://i.imgur.com/Kcc7PFv.gif" />
+							</div>
+							<p>
+							 Find out what time it is where your friends are, all by using a timezone! You can also get the stats for AradiaBot's online time as well as see all the timezones which match an hour!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.9s">
+						<div class="align-center">
+							<h4>Dynamic Mod-Logs</h4>					
+							<div class="icon">
+								<img style="height:150px;" src="http://i.imgur.com/KnEHs3P.png" />
+							</div>
+							<p>
+							 Dont want AradiaBot to track an event? Change it within seconds! No need to remember fancy commands, just change it directly. <a href="json.html">See here for more information!</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="thumbnail"> <img src="http://i.imgur.com/0zF9KcA.gif" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption">
-          <h3>Youtube search</h3>
-          <p>You can now search youtube and many other places!!</p>
-          <hr>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="thumbnail"> <img src="http://i.imgur.com/RSH1hSZ.gif" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption">
-          <h3>BBC news</h3>
-          <p>Grabs the latest news from your chosen news feed</p>
-          <hr>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container" id="Commands">
-  <div class="row">
-    <h1>Commands</h1>
-    <hr>
-    <div class="col-lg-3 col-sm-6">
-      <div class="panel panel-default panel-success"> 
-        <!-- Default panel contents -->
-        <div class="panel-heading">
-          <h3>Fun commands</h3>
-        </div>
-        <!-- Table -->
-        <table class="table">
-
-          <tbody>
-            <tr>
-              <th scope="row">>news -  Gets the latest news</th>
-            </tr>
-            <tr>
-              <th scope="row">>y - Youtube Search</th>
-            </tr>
-            <tr>
-              <th scope="row">>look - Look at this meme</th>
-            </tr>
-            <tr>
-              <th scope="row">>define - Defines a word</th>
-            </tr>
-            <tr>
-              <th scope="row">>button - Would you press the button?</th>
-            </tr>
-            <tr>
-              <th scope="row">>chat - Talk to 85 herself!</th>
-            </tr>
-            <tr>
-              <th scope="row">>video - Creates a video chat room for you and your friends</th>
-            </tr>
-            <tr>
-              <th scope="row">>dont - Dont talk to me.</th>
-            </tr>
-            <tr>
-              <th scope="row">>invert - Invert images</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-lg-3 col-sm-6">
-      <div class="panel panel-default panel-warning"> 
-        <!-- Default panel contents -->
-        <div class="panel-heading">
-          <h3>Tag based commands</h3>
-        </div>
-        <!-- Table -->
-        <table class="table">
-          <thead>
-          </thead>
-          <tbody>
-			<tr>
-              <th scope="row">>tt [Tag name] - Call a tag</th>
-            </tr>
-            <tr>
-              <th scope="row">>tc [Tag name] [Tag contents] - Creates a tag with the name and contents.</th>
-            </tr>
-            <tr>
-              <th scope="row">>td [Tag name] - Deletes a tag with the name the name. (Must own tag to delete)</th>
-            </tr>
-            <tr>
-              <th scope="row">>te [Tag name] [New tag contents] - Edits a tag with the name.</th>
-            </tr>
-            <tr>
-              <th scope="row">>tc-n [Tag name] [Tag content] - Creates an nsfw tag.</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-lg-3 col-sm-6">
-      <div class="panel panel-default panel-info"> 
-        <!-- Default panel contents -->
-        <div class="panel-heading">
-          <h3>NSFW Commands (Only works in NSFW channels.)</h3>
-        </div>
-        <!-- Table -->
-        <table class="table">
-          <thead>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">>r34 - Searches rule34.xxx for your query.</th>
-            </tr>
-            <tr>
-              <th scope="row">>r34s - Searches rule34stuck.booru.org for prons.</th>
-            </tr>
-            <tr>
-              <th scope="row">>r34f - Searches for traps</th>
-            </tr>
-            <tr>
-              <th scope="row">>r34c - Searches a custom booru.</th>
-            </tr>
-            <tr>
-              <th scope="row">Please note, If you want me to add custom nsfw commands, PM me. Cerulean#7014</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-lg-3 col-sm-6">
-      <div class="panel panel-default panel-danger"> 
-        <!-- Default panel contents -->
-        <div class="panel-heading">
-          <h3>Moderation commands</h3>
-        </div>
-        <!-- Table -->
-        <table class="table">
-          <thead>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">>ban - Bans a user. Can also channel/local ban.</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
-<hr>
-<div class="container">
-  <div class="row">
-<div class="col-lg-4 col-md-6 col-sm-6">
-      <h2>Contact Us</h2>
-      <strong>Our discord server!</strong><br>
-      https://discord.gg/PCqdz<br>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-6">
-      <h2>Testimonials</h2>
-      <div class="media">
-        <div class="media-body"> <a href="#"> <img class="media-object" src="images/dave.png" alt="..."> </a> </div>
-      </div>
-      <div class="media">
-        <div class="media-body"> <a href="#"> <img class="media-object" src="images/jade.png" alt="..."> </a> </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-sm-12">
-      <h2>About Us</h2>
-      <p>Owner/Developer - Cerulean. Has been coding python bots and projects for 7 months. </p>
-      <p>85 AKA AradiaBot has been workerd on for 4 months in total. Original name was CobaltBot before being renamed to "85" as part of a family of bots known as the HSD Bots. 72 being a brother bot made by Difarem and Wheals in go. I, Cerulean, Do not code 72. kthx~</p>
-    </div>
-  </div>
-</div>
-  <hr>
-<footer class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p></p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.3.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script>
+	
+	<div class="breadcrumb">
+		<h4>About Us</h4>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="">							
+				<div class="col-md-4">
+					<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.8s">
+						<div class="list-group">
+							<a href="#" class="list-group-item active">
+								<h4 class="list-group-item-heading">Cerulean - Main Programmer</h4>
+                                <img style="vertical-align:central;" src="img/ceru.png" />
+								<p class="list-group-item-text">Hi, im Cerulean. I made AradiaBot from scratch. Learned how to code with python and use *try* to understand the basics of object based programming
+								</p>
+							</a>
+                            <a href="#" class="list-group-item active">
+                                <h4 class="list-group-item-heading">Kohi - Junior Programmer</h4>
+                                <p class="list-group-item-text">
+                                    
+                                </p>
+                            </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="image">
+						<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.3s">						
+							<img src="http://i.imgur.com/YfOqJFD.png" alt="" class="img-responsive">					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<hr>
+	
+	<!--start footer-->
+	<footer>
+				
+		<div class="sub-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="social-network">
+							<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+							<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+							<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+							<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+							<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--end footer-->
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/responsive-slider.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>wow = new WOW({}).init();</script>
+    
 </body>
 </html>
