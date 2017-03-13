@@ -1,21 +1,189 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aradiabot - Cerulean</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/responsive-slider.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="css/style.css" rel="stylesheet">	
-  </head>
-  <body>
-      <div class="animation">
-          <h3 class="center">Please come back soon!</h3>
-      </div>
-    
-</body>
-</html>
+<head>
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<section class="hero is-info is-medium">
+    <!-- Hero header: will stick at the top -->
+    <div class="hero-head">
+        <header class="nav">
+            <div class="container">
+                <div class="nav-left">
+                    <a class="nav-item">
+                        <img src="images/AradiaBot_title.png" alt="Logo">
+                    </a>
+                </div>
+                <span class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div class="nav-right nav-menu">
+                    <a class="nav-item is-active">
+                        Home
+                    </a>
+                    <a class="nav-item" href="https://p.datadoghq.com/sb/ea873c093-59bbe09658">
+                        Stats
+                    </a>
+                    <span class="nav-item">
+                        <a class="button is-info is-inverted" href="https://discordapp.com/oauth2/authorize?client_id=211994441106325504&scope=bot">
+                            <span class="icon">
+                                <img src="images/AradiaBot_Small.png">
+                            </span>
+                            <span>Invite!</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">
+                Aradiabot
+            </h1>
+            <h2 class="subtitle">
+                Manage your Discord server in every timeline.
+            </h2>
+        </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+            <div class="container">
+                <ul>
+                    <li><a href="#quick">Overview</a></li>
+                    <li><a href="#modlog">Modlog</a></li>
+                    <li><a href="#commands">Commands</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="content" id="quick">
+            <h1 class="has-text-centered title">A quick run down</h1>
+            <p>Aradiabot is a bot designed for speed, reliablility and fun. In the last 2 months AradiaBot went from a small bot used by 10 servers to a bot used by thousands (over 19,000). Aradiabot currently features over 40 commands. (42 Currently) as well as many more to come.</p>
+            <h2 class="has-text-centered title">Why should I choose this bot?</h2>
+            <p>AradiaBot is fast, reliable and most importantly she just works. Theres no hassle or long set up screens, just a single command and AradiaBot will do the rest.</p>
+            <h3>So...if I got Aradiabot, What can she offer me?</h3>
+            <p>Welllllll, Look below for a quick list of things AradiaBot can do!</p>
+            <ul>
+                <li>Automatic mod log</li>
+                <li>Fast response</li>
+                <li>Welcome messages</li>
+                <li>100% control over AradiaBot in your server</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container" id="modlog">
+            <h1 class="title">
+                Dynamic, No BS, Easy to understand and set up mod log
+            </h1>
+            <h2 class="subtitle">
+                Just do <a href="#Commands">enable log</a> and boom!
+            </h2>
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <img src="images/mod_log.png"/>
+                        <p class="subtitle" style="color:black;">This is an example of how AradiaBot logs events</p>
+                    </div>
+                    <div class="tile is-child box">
+                        <p class="subtitle" style="color:black;">To set up moderation logs you need to do >enable log in the channel you want to set it up in. Once you have set up the channel, AradiaBot will work instantly. If you want to change any settings, just change it in the channel topic!</p>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title" style="color:black;">This is an example of the settings page.</p>
+                        <img src="images/JSON.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container" id="cmd">
+            <h1 class="title">
+                Fast and reliable
+            </h1>
+            <h2 class="subtitle">
+                Now with custom prefix
+            </h2>
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <img src="images/tag.png" />
+                        <p class="subtitle" style="color:black;">Tag commands example</p>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title" style="color:black;">Fun commands</p>       
+                        <ul>
+                            <li style="color:black;">movie - Gets movie stats or random movie.</li>
+                            <li style="color:black;">slots - Says what it does on the tin.</li>
+                            <li style="color:black;">ship - Ships two users.</li>
+                            <li style="color:black;">cards - Play poker against AradiaBot</li>
+                            <li style="color:black;">love - Does AradiaBot love you?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title" style="color:black;">Utility commands</p>
+                        <ul>
+                            <li style="color:black;">time - Gets the time in the timezone you want</li>
+                            <li style="color:black;">convert - Converts X to Y</li>
+                            <li style="color:black;">roll - Rolls dice</li>
+                            <li style="color:black;">weather - Gets the weather in your area</li>
+                            <li style="color:black;">random - Picks a random user or item in a list</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container" id="cmd_image">
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <p class="title" style="color:black;">Image Commands</p>
+                        <ul>
+                            <li style="color:black;">art - Gets art from MSPABooru</li>
+                            <li style="color:black;">From here, these are NSFW only commands!</li>
+                            <li style="color:black;">r34 - Gets smut from rule34.xxx</li>
+                            <li style="color:black;">r34s - Gets smut from rule34stuck.com</li>
+                            <li style="color:black;">r34f - Gets smut from bunniebooru</li>
+                        </ul>
+                    </div>
+                    <div class="tile is-child box">
+                        <p class="subtitle" style="color:black;">To set up moderation logs you need to do >enable log in the channel you want to set it up in. Once you have set up the channel, AradiaBot will work instantly. If you want to change any settings, just change it in the channel topic!</p>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title" style="color:black;">These are all of the commands. Not including the music functions</p>
+                        <img src="images/help.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">AradiaBot</h1>
+            <h1 class="subtitle">Made by Cerulean#7014</h1>
+        </div>
+    </div>
+</section>
